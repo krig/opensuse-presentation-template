@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>openSUSE Presentation Template</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/opensuse.css">
+    <link rel="stylesheet" href="lib/css/color-brewer.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="img/hexagons.png" data-background-size="100%"
+                 data-background-position="bottom">
+          <h1>Slide 1</h1>
+   </section>
+        <section>
+          <section>Vertical Slide 1</section>
+          <section>Vertical Slide 2</section>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Page title
+
+            A paragraph with some text and a [link](http://hakim.se).
+          </script>
+           </section>
+                <section data-markdown>
+                    <script type="text/template">
+                      ```c
+                      int main(int argc, char* argv[]) {
+                        return 0;
+                      }
+                        ```
+                    </script>
+                </section>
+        
+        <section>
+          <p><h2>Questions?</h2></p>
+          <p><img src="img/chameleon.svg" height="500px"></p>
+          <div class="colophon">
+            2016
+            <br>
+            <a href="https://github.com/hakimel/reveal.js">reveal.js</a>, <a href="http://opensuse.github.io/branding-guidelines/">openSUSE
+                branding guidelines</a></p>
+        </section>
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        width: 960,
+        height: 540,
+        margin: 0.1,
+      
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/notes/notes.js' }
+        ]
+      });
+    </script>
+  </body>
+</html>
