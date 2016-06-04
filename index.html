@@ -5,43 +5,46 @@
     <title>openSUSE Presentation Template</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/opensuse.css">
-    <link rel="stylesheet" href="lib/css/color-brewer.css">
+    <link rel="stylesheet" href="lib/css/github.css">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
         <section data-background="img/hexagons.png" data-background-size="100%"
-                 data-background-position="bottom">
-          <h1>Slide 1</h1>
-   </section>
-        <section>
-          <section>Vertical Slide 1</section>
-          <section>Vertical Slide 2</section>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ## Page title
+                 data-background-position="50% 105%">
+          <h1>My Presentation</h1>
 
-            A paragraph with some text and a [link](http://hakim.se).
-          </script>
-           </section>
-                <section data-markdown>
-                    <script type="text/template">
-                      ```c
-                      int main(int argc, char* argv[]) {
-                        return 0;
-                      }
-                        ```
-                    </script>
-                </section>
-        
+          <div class="title-name">Name - Title</div>
+          <div class="title-mail">email@example.com</div>
+        </section>
+        <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
+        <section data-markdown="slides.md" data-separator="^\n---\n$" data-separator-vertical="^\n--\n$"></section>
         <section>
           <h1>Questions?</h1>
           <p><img src="img/chameleon.svg" style="max-height:300px;"></p>
           <div class="colophon">
             <a href="https://www.opensuse.org/">openSUSE</a> 2016
           </div>
-        </section>
+           </section>
+        <section>
+          <h5>General Disclaimer</h5>
+          <div class="disclaimer">
+This document is not to be construed as a promise by any participating
+organisation to develop, deliver, or market a product.  It is not a commitment
+to deliver any material, code, or functionality, and should not be relied upon
+in making purchasing decisions.  openSUSE makes no representations or
+warranties with respect to the contents of this document, and specifically
+disclaims any express or implied warranties of merchantability or fitness for
+any particular purpose.  The development, release, and timing of features or
+functionality described for openSUSE products remains at the sole discretion of
+openSUSE.  Further, openSUSE reserves the right to revise this document and to
+make changes to its content, at any time, without obligation to notify any
+person or entity of such revisions or changes. All openSUSE marks referenced in
+this presentation are trademarks or registered trademarks of SUSE LLC, in the
+United States and other countries.  All third-party trademarks are the property
+of their respective owners.
+</div>
+          </section>
       </div>
     </div>
     <script src="lib/js/head.min.js"></script>
@@ -51,18 +54,13 @@
         controls: true,
         progress: true,
         history: true,
-        center: true,
-        width: 960,
-        height: 540,
-        margin: 0.1,
       
         // Optional libraries used to extend on reveal.js
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/notes/notes.js' }
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
     </script>
